@@ -7,11 +7,13 @@ import Forma from './components/Forma';
 import HelloWorld from './components/HelloWorld';
 import { Lists } from './components/Lists';
 import Fetching from './components/Fetching';
+import Inicio from './components/Inicio';
 
 function App() {
   return (
     <div className="App">
-      <Fetching/>
+      <Inicio/>
+      {/* <Fetching/>
       <HelloWorld name={'Juan'}/>
       <Lists/>
       <div className="alerta">
@@ -26,7 +28,7 @@ function App() {
       </Alert>
       <Forma></Forma>
       <img src="https://www.biggerbolderbaking.com/wp-content/uploads/2021/03/Chewy-Brownies-Thumbnail-scaled.jpg"/>
-      <Button variant="danger">Paysafe</Button>
+      <Button variant="danger">Paysafe</Button> */}
     </div>
   );
 }

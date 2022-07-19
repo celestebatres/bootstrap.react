@@ -6,6 +6,7 @@ function Fetching() {
 
     useEffect(()=> {
         axios
+        //En lugar de get - then se puede utilizar el async await
             .get('https://jsonplaceholder.typicode.com/posts')
             .then(res => {
                 console.log(res)
