@@ -1,9 +1,8 @@
-import React, {useEffect} from 'react';
 import axios from 'axios';
 
-const personajes = async () => {
+const personajes = async (state) => {
     const peticion = await axios.get('https://rickandmortyapi.com/api/character');
-    console.log(peticion);
+    state(peticion.data.results);
 }
 
 export {
