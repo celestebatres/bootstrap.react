@@ -13,8 +13,8 @@ const Inicio = () => {
         <div>
             {personajess != null ? (
                 personajess.map(personaje => (
-                    <div>
-                        <a href="#" key = {personaje.id}>{personaje.name}</a>
+                    <div key = {personaje.id}>
+                        <a href="#">{personaje.name}</a>
                     </div>
                 ))
             ): ('no hay personajes')}
